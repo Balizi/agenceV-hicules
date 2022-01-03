@@ -11,22 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style_Contact.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style_Contact.css">
+    <title>Contact</title>
 </head>
 <body>
-    <!--Header -->
+    <!--Start Header -->
 	<header >
         <div class="container header_content">
-            <h1 class="logo">Mario Blas</h1>
+            <h1 class="logo">RentMeNow</h1>
             <input type="checkbox" id="navbar">
             <nav>
-                <a href="Homme.html">Accueil</a> 
-                <a href="#">Gallerie</a>
-                <a href="#">Réservation</a>
-                <a href="Contact.html">Contact</a> 
+                <a href="index.html">Accueil</a> 
+                <a href="Gallery.html">Gallerie</a>
+                <a href="Reservation.html">Réservation</a>
+                <a href="Contact.html" style="color: #296EDB;">Contact</a> 
             </nav>
-
             <div class="buttons">
                 <button>login</button>
                 <button>sing up</button>
@@ -36,24 +35,25 @@
             </div>
         </div>
     </header>
-    <!--Header -->
+    <!--End Header -->
 
-    <!-- Sectio; -->
-    <section class="contain">
-		<div class="contact-box">
+    <!-- Main -->
+    <main class="contain">
+		<section class="contact-box">
 			<div class="left"></div>
 			<div class="right">
 				<h2>Contact Us</h2>
 				<input type="text" class="field" placeholder="Name" id="nom">
-				<input type="text" class="field" placeholder="Email" id="email">
+				<input type="email" class="field" placeholder="Email" id="email">
 				<input type="text" class="field" placeholder="Sujet" id="sujet">
 				<textarea placeholder="Message" class="field" id="message"></textarea>
 				<button class="btn" onclick="AffIcher()">Send</button>
 			</div>
-		</div>
-	</section>
+		</section>
+    </main>
+    <!--End Main-->
 
-    <script src="main_contact.js"></script>
+    <script src="js/main_contact.js"></script>
 
 </body>
 </html>

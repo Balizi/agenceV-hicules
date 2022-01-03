@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style_Reservation.css">
+    <title>Réservation</title>
+</head>
+<body>
+    <!--Header -->
+	<header >
+        <div class="container header_content">
+            <h1 class="logo">RentMeNow</h1>
+            <input type="checkbox" id="navbar">
+            <nav>
+                <a href="index.html">Accueil</a> 
+                <a href="Gallery.html">Gallerie</a>
+                <a href="Reservation.html" style="color: #296EDB;">Réservation</a>
+                <a href="Contact.html" >Contact</a> 
+            </nav>
+            <div class="buttons">
+                <button>login</button>
+                <button>sing up</button>
+            </div>
+            <div class="toggle_nav">
+                <label for="navbar"></label>
+            </div>
+        </div>
+    </header>
+    <!--Header -->
+
+    <main class="container all">
+        <div class="title">
+            <h1>Réservation</h1>
+        </div>
+        <div class="form">
+            <div class="inputfield">
+                <label for="">Type</label>
+                <div class="custom_select">
+                    <select name="" id="select1">
+                        <option value="Choisire un type" disabled selected>Choisire un type</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label for="">Boit à vites</label>
+                <div class="custom_select">
+                    <select name="" id="select2">
+
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label for="">Carburateur</label>
+                <div class="custom_select">
+                    <select name="" id="select3">
+
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield" >
+                <label for="">Nombre de Jours</label>
+                <div class="custom_select">
+                    <input type="number" name="" min="1" id="num">
+                </div>
+            </div>
+            <div class="inputfield" >
+                <label for="">Prix</label>
+                <div class="custom_select">
+                    <p class="pr" id="resulta"></p>
+                </div>
+            </div>
+            <div class="inputfield">
+                <input type="submit" value="Réserver" class="btn" onclick="Somme()">
+              </div>
+        </div>
+    </main>
+
+    <script src="js/main_reservation.js"></script>
+</body>
+</html>
