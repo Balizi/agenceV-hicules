@@ -179,7 +179,7 @@ function Somme(){
             resu=(inp.value*250)+(21/100);
             end=resu+((resu*21)/100)+(resu*19/100);
         }
-        resul.innerHTML=end;
+        resul.innerHTML=end+"Є";
     }
     // alert("Prix de réservation : "+resu);
 }
